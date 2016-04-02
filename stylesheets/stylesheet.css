@@ -423,3 +423,109 @@ Small Device Styles
   }
 
 }
+/**************************************
+**************************************/
+.menu ul li a {
+    font-size:14px;
+    display:block;
+    color:#ffffff;
+    border-left:3px solid #2ddb73;
+    background:#2ddb73;
+}
+
+.menu ul li a:hover, .menu ul li:hover > a{
+    background:#bbeebb;
+    border-left:3px solid #2ddb73/*#9CA3DA*/;
+    color:#797979;
+}
+
+/*fdfddfdffdff*/
+#menu_bloque-log{/*Se utiliza en el nav que contiene el menu*/
+    background-color: #333333;
+    width: 1340px;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.menu-log{
+    display:block;
+}
+
+.menu-log li{
+    display: inline-block;
+    position: relative;
+    z-index:100;/*es el encargado de que el submenu no este en el mismo plano que el menu, sino mas adelante*/
+}
+
+.menu-log li a {
+    text-decoration:none;/*para que no se vea el subrayado de los links*/
+    padding:15px;
+    display:block;
+    color:#cccccc;
+    /*parte encargada de cambiar el color al menu*/
+    /*Sporte para las transiciones*//*Siempre especificar que propiedad se quiere modificar en ejecucion y el tiempo*/
+    -webkit-transition: all 0.2s ease-in-out 0s;   /*safari*/ 
+    -moz-transition: all 0.2s ease-in-out 0s;   /*mozzila*/
+    -o-transition: all 0.2s ease-in-out 0s; /*opera*/
+    -ms-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.menu-log li a:hover, .menu li:hover > a{/*Hover acompaña a la transicion del menu*/
+    color:#ffffff;
+    background:#2ddb73;
+}
+
+.menu-log ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    position: absolute;
+    top: 43px;
+    left: 0px;
+    background: #ffffff;
+}
+
+.menu-log li a:hover, .menu li:hover > a{
+    color:#ffffff;
+    background:#2ddb73;
+}
+
+/*oculta el submenu */
+.menu-log ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    position: absolute;
+    top: 43px;
+    left: 0px;
+    background: #ffffff;
+}
+/* muestra el submenu */
+.menu-log li:hover > ul{
+    display: block;
+}
+ 
+.menu-log ul li {
+    display:block;
+    float: none;
+    background:none;
+    margin:0;
+    padding:0;
+}
+.menu-log ul li a {
+    font-size:14px;
+    display:block;
+    color:#ffffff;
+    border-left:3px solid #2ddb73;
+    background:#2ddb73;
+}
+
+.menu-log ul li a:hover, .menu ul li:hover > a{
+    background:#bbeebb;
+    border-left:3px solid #2ddb73/*#9CA3DA*/;
+    color:#797979;
+}

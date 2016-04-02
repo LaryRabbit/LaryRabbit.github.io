@@ -1,0 +1,651 @@
+* {/*Se define un margen de 0 a toda la pagina*/
+    margin:0px;
+    padding: 0px;
+}
+
+header, section, footer, aside, nav, article, figure, figcaption,
+hgroup{
+    display: block;
+}/*Algunos navegadores aún no reconocen estos elementos o
+los tratan como elementos inline (en línea). con esto lo tratan como div*/
+
+#agrupar {/*Agrupar a la pagina en un bloque (sin header ni footer)*/
+    width: 1340px;
+    margin: 15px auto;
+    text-align: center;
+}
+#anuncios{
+    padding-top: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0px;
+    display: inline-block;
+    text-align: center;
+}
+.alinear-contenido{
+    margin: 70px 0px;
+    margin-left: 290px;
+    width: 780px;
+    
+}
+.alinear-tabla{
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    margin: 70px 0px;
+    margin-left: 290px;
+    width: 780px;
+    
+}
+.alinear-tabla2{
+    margin: 10px 0px;
+    margin-left: 290px;
+    width: 780px;
+
+}
+
+body {
+    text-align: center;
+    font-size:16px;
+    background-color:#fafafa;
+    color:#000000;
+    font-family:Lao UI,Trebuchet MS,Verdana, Arial, Helvetica, sans-serif;
+}
+
+#cabecera {/*La cabecera se compone del logo, nombre y login*/
+    text-align: left;
+    padding: 15px;
+}
+
+#cabecera img{/*logo*/
+    vertical-align: middle;
+}
+
+#cabecera span{/*nombre*/
+    vertical-align: middle;
+    font-size: 40px;
+    font-family:Trebuchet,Lao UI, MS,Verdana, Arial, Helvetica, sans-serif;
+}
+
+#cabecera section{/*login*/
+    vertical-align: middle;
+    float:right;
+}
+
+#cabecera section span{
+    font-size: 14px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+#cabecera section span image{
+    vertical-align: middle;
+    padding-left: 0px;
+}
+
+#cabecera section span a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.campo{/*Se utiliza en el login*/
+    margin-top: 15px;
+    padding: 0px 2px;
+    direction: ltr;
+    height: 34px;
+    width: 260px;
+    font-size: 16px;
+}
+
+.campo-boton{/*Se utiliza en el login*/
+    margin-top: 15px;
+    padding: 0px;
+    direction: ltr;
+    height: 34px;
+    width: 266px;
+    font-size: 16px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: opx;
+}
+
+.campo-boton2{/*Se utiliza en el registro*/
+    -webkit-appearance:button;
+    -moz-appearance:button;
+    appearance:button;
+    text-decoration: none;
+    color: initial;
+    margin-top: 15px;
+    padding: 0px;
+    direction: ltr;
+    height: 34px;
+    width: 100px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.campo-boton3{/*Se utiliza para cerrar sesion, es el mas largo*/
+    -webkit-appearance:button;
+    -moz-appearance:button;
+    appearance:button;
+    text-decoration: none;
+    color: initial;
+    margin-top: 15px;
+    margin-left: 370px;
+    padding: 0px;
+    direction: ltr;
+    height: 34px;
+    width: 150px;
+    font-size: 16px;
+    text-align: center;
+}
+.campo-boton4{/*Se utiliza en el login*/
+    margin-top: 15px;
+    padding: 0px;
+    direction: ltr;
+    min-height: 20px;
+    min-width: 160px;
+    font-size: 16px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+.campo-boton-e{/*Se utiliza en el login*/
+    margin-top: 0px;
+    padding: 0px;
+    direction: ltr;
+    min-height: 20px;
+    min-width: 100px;
+    font-size: 16px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+.circular-registro{
+    width: 60px;
+    height: 60px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background: url(imagenes/escom.jpg) no-repeat; }/*HACE CIRCULAR UNA IMAGEN*/
+
+.contacto-info{/*usado en contacta al panda*/
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #737373;
+}
+
+#contenido {/*Agrupar todo el contenido de la pagina en un gran bloque*/
+    min-height: 500px;
+}
+
+.contenido{/*Utilizado en index*/
+    text-align: justify;
+    padding-left: 50px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    width: 1240px;
+}
+
+#contenido-login{/*Utilizado en login*/
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    width: 1240px;
+    height: 400px; 
+}
+
+#cuadro-login{
+    background: #E6E0F8;
+    height: 300px;
+    width: 300px;
+    margin-top: 50px;
+    margin-left: 500px;
+    padding: 15px 15px;
+    box-shadow: 8px 8px 5px #888888;
+}
+#cuadro-login-img{
+    vertical-align: middle;
+    padding-left: 0px;
+}
+
+div fieldset{
+    text-align: justify;
+    margin: 50px 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 1140px;
+}
+
+div fieldset legend{
+    color: #737373;
+    font-size: 30px;
+    font-family:Trebuchet,Lao UI, MS,Verdana, Arial, Helvetica, sans-serif;
+}
+.espacio-a{
+    margin-bottom: 15px;
+}
+footer{
+    background: #333333;
+    font-size: 12px;
+    text-align: center;
+    color: #ffffff;
+    padding: 15px;
+}
+
+.fecha{
+    vertical-align: middle;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: 1px solid #dddddd;
+    border-top: 1px solid #dddddd;
+    margin: 0;
+}
+
+footer span{
+    vertical-align: middle;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+footer span a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.formulario-contacto{
+    
+}
+
+.img_foot{
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.link{
+    text-decoration: none;
+    padding: 15px 0px;
+    color: #2cb037;
+}
+
+#menu_bloque{/*Se utiliza en el nav que contiene el menu*/
+    background-color: #333333;
+    width: 1340px;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.menu{
+    display:block;
+}
+
+.menu li{
+    display: inline-block;
+    position: relative;
+    z-index:100;/*es el encargado de que el submenu no este en el mismo plano que el menu, sino mas adelante*/
+}
+
+.menu li a {
+    text-decoration:none;/*para que no se vea el subrayado de los links*/
+    padding:15px;
+    display:block;
+    color:#cccccc;
+    /*parte encargada de cambiar el color al menu*/
+    /*Sporte para las transiciones*//*Siempre especificar que propiedad se quiere modificar en ejecucion y el tiempo*/
+    -webkit-transition: all 0.2s ease-in-out 0s;   /*safari*/ 
+    -moz-transition: all 0.2s ease-in-out 0s;   /*mozzila*/
+    -o-transition: all 0.2s ease-in-out 0s; /*opera*/
+    -ms-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.menu li a:hover, .menu li:hover > a{/*Hover acompaña a la transicion del menu*/
+    color:#ffffff;
+    background:#2ddb73;
+}
+
+.menu ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    position: absolute;
+    top: 43px;
+    left: 0px;
+    background: #ffffff;
+}
+
+.menu li a:hover, .menu li:hover > a{
+    color:#ffffff;
+    background:#2ddb73;
+}
+
+/*oculta el submenu */
+.menu ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    position: absolute;
+    top: 43px;
+    left: 0px;
+    background: #ffffff;
+}
+/* muestra el submenu */
+.menu li:hover > ul{
+    display: block;
+}
+ 
+.menu ul li {
+    display:block;
+    float: none;
+    background:none;
+    margin:0;
+    padding:0;
+}
+.menu ul li a {
+    font-size:14px;
+    display:block;
+    color:#ffffff;
+    border-left:3px solid #2ddb73;
+    background:#2ddb73;
+}
+
+.menu ul li a:hover, .menu ul li:hover > a{
+    background:#bbeebb;
+    border-left:3px solid #2ddb73/*#9CA3DA*/;
+    color:#797979;
+}
+
+/*fdfddfdffdff*/
+#menu_bloque-log{/*Se utiliza en el nav que contiene el menu*/
+    background-color: #333333;
+    width: 1340px;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.menu-log{
+    display:block;
+}
+
+.menu-log li{
+    display: inline-block;
+    position: relative;
+    z-index:100;/*es el encargado de que el submenu no este en el mismo plano que el menu, sino mas adelante*/
+}
+
+.menu-log li a {
+    text-decoration:none;/*para que no se vea el subrayado de los links*/
+    padding:15px;
+    display:block;
+    color:#cccccc;
+    /*parte encargada de cambiar el color al menu*/
+    /*Sporte para las transiciones*//*Siempre especificar que propiedad se quiere modificar en ejecucion y el tiempo*/
+    -webkit-transition: all 0.2s ease-in-out 0s;   /*safari*/ 
+    -moz-transition: all 0.2s ease-in-out 0s;   /*mozzila*/
+    -o-transition: all 0.2s ease-in-out 0s; /*opera*/
+    -ms-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.menu-log li a:hover, .menu li:hover > a{/*Hover acompaña a la transicion del menu*/
+    color:#ffffff;
+    background:#2ddb73;
+}
+
+.menu-log ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    position: absolute;
+    top: 43px;
+    left: 0px;
+    background: #ffffff;
+}
+
+.menu-log li a:hover, .menu li:hover > a{
+    color:#ffffff;
+    background:#2ddb73;
+}
+
+/*oculta el submenu */
+.menu-log ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    position: absolute;
+    top: 43px;
+    left: 0px;
+    background: #ffffff;
+}
+/* muestra el submenu */
+.menu-log li:hover > ul{
+    display: block;
+}
+ 
+.menu-log ul li {
+    display:block;
+    float: none;
+    background:none;
+    margin:0;
+    padding:0;
+}
+.menu-log ul li a {
+    font-size:14px;
+    display:block;
+    color:#ffffff;
+    border-left:3px solid #2ddb73;
+    background:#2ddb73;
+}
+
+.menu-log ul li a:hover, .menu ul li:hover > a{
+    background:#bbeebb;
+    border-left:3px solid #2ddb73/*#9CA3DA*/;
+    color:#797979;
+}
+
+.nota{/*usada en tabla agenda*/
+    vertical-align: middle;
+    width: 480px;
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-right: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    border-top: 1px solid #dddddd;
+    margin: 0;
+}
+
+.area-texto{/*usada en tabla agenda*/
+
+}
+
+.nota-t{
+    vertical-align: middle;
+    width: 480px;
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-right: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    border-top: 1px solid #dddddd;
+    margin: 0;
+    background-color: #dddddd;
+}
+
+#registro {/*La cabecera se compone del logo, nombre y login*/
+    text-align: left;
+    padding: 100px 350px;
+}
+
+#registro img{/*logo*/
+    vertical-align: middle;
+}
+
+#registro span{/*nombre*/
+    vertical-align: middle;
+    font-size: 40px;
+    font-family:Trebuchet,Lao UI, MS,Verdana, Arial, Helvetica, sans-serif;
+}
+
+#registro section{/*login*/
+    vertical-align: middle;
+    float:right;
+}
+
+#registro section span{
+    font-size: 14px;
+    text-align: left;
+    padding-right: 10px;
+}
+
+#registro section image{
+    vertical-align: middle;
+    padding: 0px 0px;
+}
+
+#registro section p {
+    padding: 20px 0px;
+    text-align: center;
+}
+/*****************************************************************************/
+
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+   background-color:#ddd;
+}
+table#t01 th {
+    color: white;
+    font-family:Trebuchet MS,Lao UI,Verdana, Arial, Helvetica, sans-serif; 
+    background-color: #2ddb73;
+    font-size: 20px;
+    
+}
+.titulo{
+    font-family:Trebuchet MS,Lao UI,Verdana, Arial, Helvetica, sans-serif; 
+    font-size: 26px;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+.area-texto{
+    width: 250px;
+    height: 80px;
+    margin: 0px;
+}
+.area-texto-peq{
+    width: 250px;
+    height: 20px;
+    margin: 0px:
+}
+.tabla-ne{
+    /*background-color:#fafafa;*/
+    width: 100px;
+    border: 0;
+}
+/********************************************************************************/
+#cabecera2 {/*icupada en index-foros*/
+    text-align: left;
+    padding: 15px;
+}
+
+#cabecera2 img{/*logo*/
+    vertical-align: middle;
+    margin-left: 70px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+#cabecera2 span{/*nombre*/
+    vertical-align: middle;
+    font-size: 40px;
+    font-family:Trebuchet,Lao UI, MS,Verdana, Arial, Helvetica, sans-serif;
+}
+
+#cabecera2 section{/*login*/
+    vertical-align: middle;
+    float:right;
+}
+
+#cabecera2 section span{
+    font-size: 14px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+#cabecera2 section span image{
+    vertical-align: middle;
+    padding-left: 0px;
+}
+
+#cabecera2 section span a{
+    text-decoration: none;
+    color: #000000;
+}
+#contenido table tr a{
+    text-decoration: none;
+}
+.info{
+    padding: 10px;
+}
+.info-izq{
+    vertical-align: middle;
+    max-width: 260px;
+    padding-left: 30px;
+    float: left;
+    text-align: left;
+}
+.info-der{
+    vertical-align: middle;
+    max-width: 260px;
+    padding-left: 30px;
+    float: right;
+    border: 1px #CCC;
+}
+.negrita{
+    font-weight: 700;
+}
+.desc{
+    text-align: justify;
+    float: right;
+    border: 1px #CCC;
+    padding: 5px;
+}
+blockquote {
+  border-left: 10px solid #ccc;
+  margin: 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+.profesor{
+    padding: 10px;
+    font-size: 20px;
+    text-align: justify;  
+}
+.info-prof{
+    text-align: justify;
+    padding-left: 10px;
+    padding-bottom: 2px;
+}
+.info-prof dl dt {
+    padding-left: 10px;
+    font-variant: small-caps;
+}
